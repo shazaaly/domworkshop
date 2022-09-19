@@ -36,10 +36,16 @@ header{
   
 } 
 .logo{
+    position: relative;
+    margin-left: 10px;
     color: white;  
   text-decoration: none;
   font-size: 30px;
 
+}
+.logo span{
+    position: absolute;
+    margin-left: 15px;
 }
 nav ul{
     display: flex;
@@ -100,4 +106,18 @@ nav li a{
     opacity: 0.5;
     background-color: indigo;
     color: white;
+}
+/* hide subs links and view username after register */
+#user-info{
+    display: none;
+}
+
+#user-info li{
+    margin-left: 5px;
+}
+#subscription{
+    display: flex;
+}
+#subscription li{
+    padding: 0 5px;
 }
