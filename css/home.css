@@ -1,0 +1,55 @@
+.card{
+    border-radius: 20px;
+    background-color: #0f1c11;
+    color: antiquewhite;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+
+.img-container img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.img-container{
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0, 100% 70%, 0 88%);
+}
+
+.img-container::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(125deg, orange, yellow);
+    border-radius: 20px;
+    opacity: 0.7;
+    
+}
+
+.details{
+    padding: 10px 10px;
+    line-height: 1.5rem;
+}
+.details h3{
+    font-weight: 600px;
+    padding: 5px 5px;
+}
+
+.intro h3{
+    position: absolute;
+    margin: 50px;
+}
